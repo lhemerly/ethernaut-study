@@ -1,5 +1,8 @@
 # The objective here is to get through the gate by passing 3 checks. The last check is to 
-# generate a key that pass 3 conversion checks between a lot of type casting.
+# generate a key that pass 3 conversion checks between a lot of type casting. For the gasLeft
+# gate I deployed a copy of the original contract but with more revert messages, to make it
+# easier to understand where I was getting stuck. Then I proceed to brute force the gas amount
+# until I found a range of working values. I'm stuck at gate three at the moment.
 
 from web3 import Web3, middleware
 from web3.middleware import construct_sign_and_send_raw_middleware
